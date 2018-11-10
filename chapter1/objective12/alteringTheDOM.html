@@ -8,7 +8,8 @@
     <script>
         window.onload = function(){
 
-            // var outerDiv = document.getElementById('outerDiv');
+            var outerDiv = document.getElementById('outerDiv');
+            var innerDiv = document.getElementById('innerDiv');
 
             // var element = document.getElementById('innerDiv');
             // alert(element.innerHTML);
@@ -18,7 +19,11 @@
 
             var newArticle = document.createElement('article');
             newArticle.innerText = 'my new <article> element';
-            outerDiv.appendChild(newArticle);
+            //outerDiv.appendChild(newArticle);
+            //innerDiv.insertBefore(newArticle, innerDiv.firstChild);
+            innerDiv.insertBefore(newArticle, document.getElementById('P2'));
+            //innerDiv.removeChild(document.getElementById('P1'));
+            //innerDiv.removeNode(true);
         }
     </script>
 </head>
