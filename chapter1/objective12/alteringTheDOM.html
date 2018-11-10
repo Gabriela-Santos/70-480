@@ -7,26 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script>
         window.onload = function(){
-            /*
-            Acessando o DOM pela variável "document" e chamando a função 
-            "getElementById" passando o parâmetro "outerDiv", que é o ID do elemento 
-            que será buscado; e colocando o retorno da função, que é a referência do
-            elemento localizado, na variável "element"
-            */
-            // var element = document.getElementById('outerDiv');
+
+            // var outerDiv = document.getElementById('outerDiv');
+
+            // var element = document.getElementById('innerDiv');
             // alert(element.innerHTML);
+            // outerDiv.removeChild(element);
+            // var afterRemove = document.getElementById('innerDiv');
+            // alert(afterRemove);
 
-            // var paragraphs = document.getElementsByTagName('p');
-            // alert (paragraphs.length);
-
-            //var paragraphs = document.getElementsByClassName('subPara');
-            //alert('<p> elements with class subPara: ' + paragraphs.length);
-
-            //var paragraphs = document.querySelectorAll('p');
-            //alert(paragraphs.length);
-
-            var element = document.querySelector('#outerDiv');
-            alert(element.innerHTML);
+            var newArticle = document.createElement('article');
+            newArticle.innerText = 'my new <article> element';
+            outerDiv.appendChild(newArticle);
         }
     </script>
 </head>
