@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,23 +11,33 @@
 
             var outerDiv = document.getElementById('outerDiv');
             var innerDiv = document.getElementById('innerDiv');
+            var lista = document.querySelector('ul');
 
             // var element = document.getElementById('innerDiv');
             // alert(element.innerHTML);
             // outerDiv.removeChild(element);
+            //document.getElementById('outerDiv').removeChild(document.getElementById('innerDiv'));
             // var afterRemove = document.getElementById('innerDiv');
             // alert(afterRemove);
 
-            var newArticle = document.createElement('article');
-            newArticle.innerText = 'my new <article> element';
+            //var newArticle = document.createElement('article');
+            //newArticle.innerText = 'my new <article> element';
             //outerDiv.appendChild(newArticle);
             //innerDiv.insertBefore(newArticle, innerDiv.firstChild);
-            innerDiv.insertBefore(newArticle, document.getElementById('P2'));
+            //innerDiv.insertBefore(newArticle, document.getElementById('P2'));
             //innerDiv.removeChild(document.getElementById('P1'));
             //innerDiv.removeNode(true);
+            
+            //alert(innerDiv.childNodes.length);
+            //alert(lista.firstChild);
+            //alert(lista.lastChild);
+            alert(lista.hasChildNodes());
+
+
         }
     </script>
 </head>
+
 <body>
     <div id="outerDiv">
         <p class="mainPara">Main Paragraph</p>
@@ -59,7 +70,9 @@
                 <td>Row 5</td>
             </tr>
         </table>
-        <input type="text"/><input type="submit" value="Submit"/>
+        <input type="text" />
+        <input type="submit" value="Submit" />
     </div>
 </body>
+
 </html>
